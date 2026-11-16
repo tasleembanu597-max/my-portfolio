@@ -129,7 +129,7 @@ export function Projects() {
         title="Built to Understand Security"
         description="Practical projects exploring encryption, web application security analysis, database design and privacy."
       />
-      <div className="grid gap-8 lg:grid-cols-2">
+      <div className="grid max-w-6xl mx-auto gap-6 lg:grid-cols-2">
         {projects.map((p, i) => (
           <Reveal key={p.name} delay={(i % 2) * 0.08} className="min-w-0">
             <TiltCard>
