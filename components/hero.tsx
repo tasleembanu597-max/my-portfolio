@@ -96,7 +96,7 @@ export function Hero() {
 
           <motion.h1
             variants={item}
-            className="mt-10 font-heading text-[clamp(3.5rem,9vw,8.25rem)] font-bold leading-[0.98] tracking-tight text-balance"
+            className="mt-10 font-heading text-[clamp(3rem,7vw,6.5rem)] font-bold leading-[0.98] tracking-tight text-balance"
           >
             <span className="block text-foreground">Exploring</span>
             <span className="block text-foreground">the</span>
