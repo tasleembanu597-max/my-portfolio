@@ -21,7 +21,7 @@ const categories: Category[] = [
   {
     title: 'Cybersecurity',
     code: 'SEC',
-    span: 'lg:col-span-2',
+    span: 'lg:col-span-1',
     cols: 'sm:grid-cols-2 xl:grid-cols-4',
     items: [
       { name: 'Ethical Hacking Fundamentals', Icon: ShieldCheck },
