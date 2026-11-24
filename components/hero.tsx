@@ -36,7 +36,7 @@ function NameReveal({ start, instant }: { start: boolean; instant: boolean }) {
   const typing = start && shown < NAME.length
 
   return (
-    <p className="relative font-heading text-xl font-bold tracking-[0.35em] text-foreground md:text-2xl">
+    <p className="relative font-heading text-4xl font-extrabold tracking-[0.12em] text-foreground md:text-5xl lg:text-[3.5rem]">
       <span className="sr-only">{profile.name}</span>
       <span aria-hidden="true" className="invisible">
         {NAME}
