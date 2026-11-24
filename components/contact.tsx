@@ -20,7 +20,7 @@ function CopyButton({ value, label }: { value: string; label: string }) {
         } catch {}
       }}
       aria-label={copied ? `${label} copied` : `Copy ${label}`}
-      className="relative z-10 flex shrink-0 items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 text-sm text-muted-foreground transition-colors hover:border-primary/60 hover:text-foreground"
+      className="relative z-10 flex shrink-0 items-center gap-1.5 rounded-full border border-border bg-surface px-2.5 py-2 text-xs text-muted-foreground transition-colors hover:border-primary/50 hover:text-foreground sm:gap-2 sm:px-4 sm:text-sm"
     >
       {copied ? <Check className="size-4 text-primary" aria-hidden="true" /> : <Copy className="size-4" aria-hidden="true" />}
       <span aria-live="polite">{copied ? 'Copied' : 'Copy'}</span>
@@ -44,7 +44,7 @@ function ContactCard({
   copy?: boolean
 }) {
   return (
-    <div className="card-surface relative flex h-full items-center gap-5 rounded-3xl p-6 transition-colors hover:border-primary/50">
+   <div className="card-surface relative flex h-full items-center gap-3 rounded-3xl p-4 transition-colors hover:border-primary/50 sm:gap-5 sm:p-6">
       <span className="flex size-14 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary">
         <Icon className="size-6" aria-hidden="true" />
       </span>
