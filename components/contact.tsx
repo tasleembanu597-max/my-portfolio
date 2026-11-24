@@ -54,7 +54,7 @@ function ContactCard({
           <a
             href={href}
             {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-            className={`mt-1.5 block text-base font-semibold text-foreground after:absolute after:inset-0 after:rounded-3xl md:text-lg ${label === 'GITHUB' ? 'whitespace-nowrap' : 'break-words'}`}
+          className={`mt-1.5 block text-sm font-semibold tracking-tight text-foreground after:absolute after:inset-0 after:rounded-3xl md:text-base ${label === 'GITHUB' ? 'whitespace-nowrap' : 'break-words md:text-lg'}`}
           >
             {value}
             {external && <span className="sr-only"> (opens in a new tab)</span>}
