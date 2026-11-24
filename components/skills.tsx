@@ -35,8 +35,9 @@ const categories: Category[] = [
     span: '',
     cols: 'sm:grid-cols-2 lg:grid-cols-1',
     items: [
-          { name: 'Python', Icon: Binary, level: 'Beginner' },
-          { name: 'SQL', Icon: Database, level: 'Learning' },
+          { name: 'Python', Icon: Binary, level: 'Learning' },
+          { name: 'Kali Linux', Icon: SquareTerminal, level: 'Learning' },
+          { name: 'VirtualBox', Icon: Server, level: 'Learning' },
     ],
   },
   {
@@ -82,20 +83,17 @@ export function Skills() {
                 </span>
               </header>
               <ul className={cn('grid gap-4', cat.cols)}>
-                {cat.items.map(({ name, Icon, level }) => (
+              {cat.items.map(({ name, Icon }) => (
                   <li
                     key={name}
-                    className="group rounded-3xl border border-border bg-background/50 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/60 hover:shadow-[0_16px_40px_-20px_var(--glow)]"
+                    className="group rounded-3xl border border-border bg-background/50 p-4 transition-all duration-300 hover:-translate-y-1 hover:border-primary/60 hover:shadow-[0_16px_40px_-20px_var(--glow)]"
                   >
-                    <span className="flex size-14 items-center justify-center rounded-full border border-border bg-surface text-primary transition-colors group-hover:border-primary/50">
-                      <Icon className="size-6" aria-hidden="true" />
+                    <span className="flex size-11 items-center justify-center rounded-full border border-border bg-surface text-primary transition-colors group-hover:border-primary/50">
+                      <Icon className="size-5" aria-hidden="true" />
                     </span>
-                    <span className="mt-6 block text-lg font-semibold leading-snug text-foreground">{name}</span>
-                    {level && (
-                    <span className="mt-2 block font-mono text-xs tracking-wider text-primary">
-                    {level}
-                      </span>
-                     )}
+                    <span className="mt-4 block text-base font-semibold leading-snug text-foreground">{name}</span>
+                   
+                     
                   </li>
                 ))}
               </ul>
