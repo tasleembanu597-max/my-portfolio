@@ -76,7 +76,7 @@ const projects: Project[] = [
   },
   {
     number: '04',
-    name: 'ClinicShield',
+    name: 'ClinShield',
     subtitle: 'Local PII Gateway for Clinic LLM Use',
     description:
       'A privacy-focused local security gateway designed to reduce exposure of sensitive patient information during cloud AI interactions.',
