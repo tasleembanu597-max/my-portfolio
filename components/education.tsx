@@ -21,7 +21,7 @@ export function Education() {
     <section id="education" className="mx-auto max-w-[1520px] px-5 py-24 md:px-10 md:py-32 lg:px-16">
       <SectionHeading index="04" label="EDUCATION" title="Academic Foundation" />
       <Reveal>
-        <article className="card-surface relative overflow-hidden rounded-[2rem] p-6 md:p-12">
+       <article className="card-surface relative overflow-hidden rounded-[2rem] p-6 md:p-10">
           <div aria-hidden="true" className="pointer-events-none absolute -right-24 -top-24 size-96 rounded-full border border-primary/15 bg-primary/5" />
           <div aria-hidden="true" className="pointer-events-none absolute -right-40 -top-10 size-[28rem] rounded-full border border-dashed border-primary/10" />
           <div className="relative grid items-end gap-10 lg:grid-cols-[1fr_auto]">
@@ -38,7 +38,7 @@ export function Education() {
                 {profile.location}
               </p>
             </div>
-            <dl className="grid gap-4 sm:grid-cols-3">
+            <dl className="grid w-full gap-3 sm:grid-cols-3">
               {stats.map((s) => (
                <div key={s.label} className="rounded-3xl border border-border bg-background/50 p-5 w-full">
                   <dt className="font-mono text-xs leading-relaxed tracking-[0.25em] text-muted-foreground">{s.label}</dt>
