@@ -15,8 +15,7 @@ import {
 import { cn } from '@/lib/utils'
 import { Reveal, SectionHeading } from './reveal'
 
-type Category = { title: string; code: string; span: string; cols: string; items: { name: string; Icon: LucideIcon }[] }
-
+type Category = { title: string; code: string; span: string; cols: string; items: { name: string; Icon: LucideIcon; level?: string }[] }
 const categories: Category[] = [
   {
     title: 'Cybersecurity',
@@ -24,11 +23,11 @@ const categories: Category[] = [
     span: 'lg:col-span-2',
     cols: 'sm:grid-cols-2 xl:grid-cols-4',
     items: [
-      { name: 'Ethical Hacking Fundamentals', Icon: ShieldCheck },
-      { name: 'Penetration Testing Basics', Icon: Crosshair },
-      { name: 'Web Security Fundamentals', Icon: Globe },
-      { name: 'Networking Fundamentals', Icon: Network },
-    ],
+     { name: 'Ethical Hacking Fundamentals', Icon: ShieldCheck, level: 'Foundational' },
+     { name: 'Penetration Testing Basics', Icon: Crosshair, level: 'Beginner' },
+     { name: 'Web Security Fundamentals', Icon: Globe, level: 'Foundational' },
+     { name: 'Networking Fundamentals', Icon: Network, level: 'Learning' },
+         ],
   },
   {
     title: 'Programming & Database',
@@ -36,8 +35,8 @@ const categories: Category[] = [
     span: '',
     cols: 'sm:grid-cols-2 lg:grid-cols-1',
     items: [
-      { name: 'Python', Icon: Binary },
-      { name: 'SQL', Icon: Database },
+          { name: 'Python', Icon: Binary, level: 'Beginner' },
+          { name: 'SQL', Icon: Database, level: 'Learning' },
     ],
   },
   {
@@ -46,9 +45,9 @@ const categories: Category[] = [
     span: 'lg:col-span-2',
     cols: 'sm:grid-cols-3',
     items: [
-      { name: 'Nmap', Icon: Radar },
-      { name: 'Kali Linux', Icon: SquareTerminal },
-      { name: 'Metasploit', Icon: Bug },
+      { name: 'Nmap', Icon: Radar, level: 'Basic' },
+      { name: 'Kali Linux', Icon: SquareTerminal, level: 'Beginner' },
+      { name: 'Metasploit', Icon: Bug, level: 'Exploring' },
     ],
   },
   {
@@ -57,8 +56,8 @@ const categories: Category[] = [
     span: '',
     cols: 'sm:grid-cols-2 lg:grid-cols-1',
     items: [
-      { name: 'Cisco Packet Tracer', Icon: Router },
-      { name: 'VirtualBox', Icon: Server },
+      { name: 'Cisco Packet Tracer', Icon: Router, level: 'Learning' },
+      { name: 'VirtualBox', Icon: Server, level: 'Beginner' },
     ],
   },
 ]
@@ -83,7 +82,7 @@ export function Skills() {
                 </span>
               </header>
               <ul className={cn('grid gap-4', cat.cols)}>
-                {cat.items.map(({ name, Icon }) => (
+                {cat.items.map(({ name, Icon, level }) => (
                   <li
                     key={name}
                     className="group rounded-3xl border border-border bg-background/50 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/60 hover:shadow-[0_16px_40px_-20px_var(--glow)]"
@@ -92,6 +91,11 @@ export function Skills() {
                       <Icon className="size-6" aria-hidden="true" />
                     </span>
                     <span className="mt-6 block text-lg font-semibold leading-snug text-foreground">{name}</span>
+                    {level && (
+                    <span className="mt-2 block font-mono text-xs tracking-wider text-primary">
+                    {level}
+                      </span>
+                     )}
                   </li>
                 ))}
               </ul>
