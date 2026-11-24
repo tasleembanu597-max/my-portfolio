@@ -48,13 +48,13 @@ function ContactCard({
       <span className="flex size-14 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary">
         <Icon className="size-6" aria-hidden="true" />
       </span>
-      <span className="min-w-0 flex-1">
+      <span className="min-w-0 flex-1 overflow-hidden">
         <span className="block font-mono text-xs tracking-[0.25em] text-muted-foreground">{label}</span>
         {href ? (
           <a
             href={href}
             {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-            className="mt-1.5 block break-words text-lg font-semibold text-foreground after:absolute after:inset-0 after:rounded-3xl md:text-xl"
+            className={`mt-1.5 block text-base font-semibold text-foreground after:absolute after:inset-0 after:rounded-3xl md:text-lg ${label === 'GITHUB' ? 'whitespace-nowrap' : 'break-words'}`}
           >
             {value}
             {external && <span className="sr-only"> (opens in a new tab)</span>}
