@@ -99,7 +99,7 @@ export function Hero() {
           <motion.div variants={item} className="mt-14 space-y-3 border-l-2 border-primary pl-5">
             <NameReveal start={booted} instant={reduced} />
             <RotatingTitle start={nameDone} instant={reduced} />
-            <p className="text-base leading-relaxed text-muted-foreground md:text-lg">
+            <p className="mt-2 text-base leading-relaxed text-muted-foreground md:text-lg">
               Computer Science Engineering Diploma Student
               <br />
               Aspiring Cybersecurity Professional
@@ -108,7 +108,7 @@ export function Hero() {
 
           <motion.p
             variants={item}
-            className="mt-10 max-w-2xl text-lg leading-relaxed text-muted-foreground text-pretty md:text-2xl md:leading-relaxed"
+            className="mt-12 max-w-2xl text-lg leading-relaxed text-muted-foreground text-pretty md:text-2xl md:leading-relaxed"
           >
             {"I'm a Computer Science Engineering diploma student interested in cybersecurity, ethical hacking, networking and secure application development. I enjoy exploring how digital systems work and building practical technical projects."}
           </motion.p>
