@@ -35,11 +35,10 @@ const categories: Category[] = [
     span: '',
     cols: 'sm:grid-cols-2 lg:grid-cols-1',
     items: [
-          { name: 'Python', Icon: Binary, level: 'Learning' },
-          { name: 'Kali Linux', Icon: SquareTerminal, level: 'Learning' },
-          { name: 'VirtualBox', Icon: Server, level: 'Learning' },
-    ],
-  },
+      { name: 'Python', Icon: Binary },
+      { name: 'SQL', Icon: Database },
+           ],
+   },
   {
     title: 'Security Tools',
     code: 'OPS',
@@ -55,7 +54,7 @@ const categories: Category[] = [
     title: 'Networking & Development Tools',
     code: 'NET',
     span: '',
-    cols: 'sm:grid-cols-2 lg:grid-cols-1',
+    cols: 'sm:grid-cols-2 lg:grid-cols-2',
     items: [
       { name: 'Cisco Packet Tracer', Icon: Router, level: 'Learning' },
       { name: 'VirtualBox', Icon: Server, level: 'Beginner' },
