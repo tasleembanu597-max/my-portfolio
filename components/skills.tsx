@@ -20,7 +20,7 @@ const categories: Category[] = [
   {
     title: 'Cybersecurity',
     code: 'SEC',
-    span: 'lg:col-span-2',
+    span: '',
     cols: 'sm:grid-cols-2 xl:grid-cols-4',
     items: [
      { name: 'Ethical Hacking Fundamentals', Icon: ShieldCheck, level: 'Foundational' },
@@ -43,7 +43,7 @@ const categories: Category[] = [
   {
     title: 'Security Tools',
     code: 'OPS',
-    span: 'lg:col-span-2',
+    span: '',
     cols: 'sm:grid-cols-3',
     items: [
       { name: 'Nmap', Icon: Radar, level: 'Basic' },
@@ -72,7 +72,7 @@ export function Skills() {
         title="The Toolkit"
         description="The languages, security concepts and tools I work with across my studies and projects."
       />
-      <div className="grid gap-6 lg:grid-cols-3">
+      <div className="grid gap-6 lg:grid-cols-2">
         {categories.map((cat, i) => (
           <Reveal key={cat.title} delay={i * 0.06} className={cn('min-w-0 self-start', cat.span)}>
             <article className="card-surface rounded-[2rem] p-5 md:p-7">
