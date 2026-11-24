@@ -94,16 +94,7 @@ export function Hero() {
             COMPUTER SCIENCE ENGINEERING STUDENT
           </motion.div>
 
-          <motion.h1
-            variants={item}
-            className="mt-10 font-heading text-[clamp(3rem,7vw,6.5rem)] font-bold leading-[0.98] tracking-tight text-balance"
-          >
-            <span className="block text-foreground">Exploring</span>
-            <span className="block text-foreground">the</span>
-            <span className="block bg-gradient-to-r from-primary to-bright bg-clip-text text-transparent">
-              Digital Frontier.
-            </span>
-          </motion.h1>
+          
 
           <motion.div variants={item} className="mt-14 space-y-3 border-l-2 border-primary pl-5">
             <NameReveal start={booted} instant={reduced} />
