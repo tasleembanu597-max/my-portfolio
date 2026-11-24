@@ -100,10 +100,9 @@ export function Hero() {
             <NameReveal start={booted} instant={reduced} />
             <RotatingTitle start={nameDone} instant={reduced} />
             <p className="mt-2 text-base leading-relaxed text-muted-foreground md:text-lg">
-              Computer Science Engineering Diploma Student
-              <br />
-              Aspiring Cybersecurity Professional
+                 Computer Science Engineering Diploma Student
             </p>
+  
           </motion.div>
 
           <motion.p
