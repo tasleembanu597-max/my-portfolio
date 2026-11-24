@@ -57,16 +57,20 @@ export function About() {
             </p>
             <div className="mt-8 space-y-6 text-lg leading-relaxed text-muted-foreground text-pretty md:text-[1.4rem] md:leading-relaxed">
               <p>
-                I have a strong interest in cybersecurity and technology, particularly ethical hacking, networking,
-                penetration testing fundamentals and secure application development.
-              </p>
-              <p>
-                I enjoy exploring technical concepts, experimenting with virtual environments and building projects that
-                help me understand real-world technology and security challenges.
-              </p>
-              <p>I aim to strengthen my technical knowledge and develop into a cybersecurity professional.</p>
-            </div>
-          </Reveal>
+                I have a strong interest in cybersecurity, particularly ethical hacking,
+                networking, penetration testing fundamentals and secure application development.
+             </p>
+             <p>
+               I enjoy exploring technical concepts, experimenting with virtual environments
+               and building practical projects to understand real-world technology and
+               security challenges.
+            </p>
+            <p>
+              I am continuously developing my technical skills with the goal of growing
+              into a cybersecurity professional.
+           </p>
+        </div>
+        </Reveal>
 
           <ul className="mt-12 grid gap-4 sm:grid-cols-2">
             {facts.map(({ label, value, Icon }, i) => (
