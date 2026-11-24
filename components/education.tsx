@@ -40,7 +40,7 @@ export function Education() {
             </div>
             <dl className="grid gap-4 sm:grid-cols-3">
               {stats.map((s) => (
-                <div key={s.label} className="rounded-3xl border border-border bg-background/50 p-6 lg:w-48">
+               <div key={s.label} className="rounded-3xl border border-border bg-background/50 p-5 w-full">
                   <dt className="font-mono text-xs leading-relaxed tracking-[0.25em] text-muted-foreground">{s.label}</dt>
                   <dd className="mt-3 font-heading text-3xl font-bold text-foreground">{s.value}</dd>
                 </div>
