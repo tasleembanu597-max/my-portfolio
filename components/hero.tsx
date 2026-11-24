@@ -53,7 +53,7 @@ function RotatingTitle({ start, instant }: { start: boolean; instant: boolean })
   const { text } = useTypewriter(PHRASES, { enabled: start && !instant })
   const longest = PHRASES.reduce((a, b) => (b.length > a.length ? b : a))
   return (
-    <p className="font-mono text-base md:text-lg lg:text-xl font-medium text-muted-foreground">
+    <p className="font-mono text-base md:text-lg lg:text-xl font-semibold text-muted-foreground">
       <span className="sr-only">{`I'm ${PHRASES.join(', ')}.`}</span>
       <span aria-hidden="true" className="grid">
         <span className="invisible col-start-1 row-start-1">{`I'm ${longest} |`}</span>
