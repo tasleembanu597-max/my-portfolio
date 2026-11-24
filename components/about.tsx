@@ -55,7 +55,7 @@ export function About() {
               {"I'm a second-year Diploma student in Computer Science Engineering at "}
               <span className="text-primary">{profile.institution}</span>.
             </p>
-            <div className="mt-8 space-y-6 text-lg leading-relaxed text-muted-foreground text-pretty md:text-[1.4rem] md:leading-relaxed">
+            <div className="mt-8 space-y-8 text-lg leading-relaxed text-muted-foreground text-pretty md:text-[1.4rem] md:leading-relaxed">
               <p>
                 I have a strong interest in cybersecurity, particularly ethical hacking,
                 networking, penetration testing fundamentals and secure application development.
