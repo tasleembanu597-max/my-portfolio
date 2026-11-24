@@ -75,7 +75,7 @@ export function Skills() {
       <div className="grid gap-6 lg:grid-cols-3">
         {categories.map((cat, i) => (
           <Reveal key={cat.title} delay={i * 0.06} className={cn('min-w-0', cat.span)}>
-            <article className="card-surface h-full rounded-[2rem] p-6 md:p-9">
+            <article className="card-surface rounded-[2rem] p-5 md:p-7">
               <header className="mb-8 flex items-start justify-between gap-4">
                 <h3 className="font-heading text-2xl font-bold leading-tight text-foreground md:text-[1.9rem]">{cat.title}</h3>
                 <span className="shrink-0 rounded-full border border-border px-3 py-1 font-mono text-xs tracking-[0.2em] text-muted-foreground">
